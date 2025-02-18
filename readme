@@ -1,0 +1,22 @@
+// Filename: electionResult.js
+
+function  electionResult(votes) {
+    if (votes.constructor == Array) {
+        for (let i = 0; i < votes.length; i++) {
+            let count = [];
+            for ( let j = i + 1; j < votes.length; j++) {
+                if (votes[i] == votes[j]) {
+                   continue;
+                }
+                else {
+                    count.push(votes[i]);
+                }
+            }
+            console.log(count.length);
+    }
+   
+}
+else {
+    console.log('Invalid');
+}
+}
