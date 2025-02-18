@@ -5,13 +5,13 @@ function cashOut(money) {
             let cashOutCharge = money * 0.0175;
             return cashOutCharge.toFixed(4);
         } else {
-            const temp = "Invalid-1";
+            const temp = "Invalid";
             return temp;
     }
            
     }
     else {
-        const temp = "Invalid-2";
+        const temp = "Invalid";
         return temp;
     }
 }
