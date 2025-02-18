@@ -41,15 +41,19 @@ function electionResult(votes) {
 
             const temp = newVoteArray[maxIndex];
 
-            return temp;
+            return "Winner : " + temp;
+        }
+        else if (finalResult.length === 0) {
+            return "Vote is not valid";
         }
         else {
+            const drawResult = [];
             for (let i = 0; i < finalResult.length; i++) {
-                const temp = newVoteArray[finalResult[i]]
-                console.log(temp);
-
+                let temp = newVoteArray[finalResult[i]]
+                drawResult.push(temp);
             }
-            // return temp;
+            return "Draw Among : " + drawResult;
+
         }
     }
     else {
@@ -59,12 +63,13 @@ function electionResult(votes) {
     }
 }
 
-
+let voteArray = [];
+// let voteArray = ["7", "5", "3", "1", "3", "7", "6", 10, "9"];
 // let voteArray = ["7", "5", "3", "1", "3", "7", "6", "7", "9"];
-let voteArray = ["7", "5", "3", "9", "1", "3", "9", "7", "6", "7", "9"];
+// let voteArray = ["7", "5", "3", "9", "1", "3", "9", "7", "6", "7", "9"];
 // let voteArray = ["mango", "banana", "mango", "banana", "mango", "mango", "banana", "banana", "banana", "Na-Vote", "mango", "mango", "banana", "jaker party", "no", "Mango", "bananA", "na vote", "na vote"];
 
 // let voteArray = ["mango", "banana", "mango", "banana", "mango", "mango", "banana", "Na-Vote", "mango", "mango", "banana", "jaker party", "no", "mango", "BananA", "na vote", "na vote"];
 
-// console.log(electionResult(voteArray));
-electionResult(voteArray);
+console.log(electionResult(voteArray));
+// electionResult(voteArray);

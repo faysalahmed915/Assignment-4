@@ -1,5 +1,6 @@
 // voteCount = [7, 5, 3, 1, 3, 7, 6, 7, 9];
-voteCount = ["7", "5", "3", "1", "3", "7", "6", "7", "9"];
+// voteCount = ["7", "5", "3", "1", "3", "7", "6", "7", "9"];
+let voteCount = ["7", "5", "3", "9", "1", "3", "9", "7", "6", "7", "9"];
 let max = voteCount[0];
 let maxIndex = 0;
 for (let i = 0; i < voteCount.length; i++) {
