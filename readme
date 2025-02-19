@@ -1,24 +1,18 @@
-// Filename: electionResult.js
+Your assignment variant is: Assignment_04_Category_001
+Assignment task description:
+Assignment Category 001 Requirement Doc:
 
-function  electionResult(votes) {
-    if (votes.constructor == Array) {
-        for (let i = 0; i < votes.length; i++) {
-            let count = [];
-            for ( let j = i + 1; j < votes.length; j++) {
-                if (votes[i] == votes[j]) {
-                   continue;
-                }
-                else {
-                    count.push(votes[i]);
-                }
-            }
-            console.log(count.length);
-    }
-   
-}
-else {
-    console.log('Invalid');
-}
-}
+
+
+https://docs.google.com/document/d/11beuyR0zQlsupVwgjwDyRYCKx9_dqumZUj1lD1UKVEo/edit?usp=drive_link
+
+
+
+If above link doesn't work, you can use any of these alternative links below:
+
+
+
+Alternative Links
+https://docs.google.com/document/d/1_sGqgdpJVy284vJCumPfnbOxpZssqIxiDXXD634H0GI/edit?usp=drive_link
 
 
