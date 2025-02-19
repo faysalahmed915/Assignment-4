@@ -1,6 +1,7 @@
 // problem-03
 /*function signature/sample */
 // votes.constructor == Array
+// Array.isArray(times)
 
 function electionResult(votes) {
     if (votes.constructor == Array && votes.every(i => typeof i === "string")) {
